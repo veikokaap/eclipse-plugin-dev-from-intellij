@@ -124,7 +124,7 @@ class EclipsePluginCommandLineState(eclipsePluginRunConfiguration: EclipsePlugin
           programParams.addAll(arrayOf(
               "-data", configuration.workspaceDirPath,
               "-configuration", findPluginConfigurationPath(),
-              "-dev", "target/classes,bin"
+              "-dev", "target/classes,bin" // TODO: Don't hardcode these, but take from project files/properties
           ))
           
           if (!programParams.contains("-consoleLog")) {
@@ -192,7 +192,6 @@ class EclipsePluginCommandLineState(eclipsePluginRunConfiguration: EclipsePlugin
         .findFirst()
         .orElseThrow { IOException("Failed to find bundle-version") }
   }
-  
   
   private fun findLauncherLibraryPath(): String? {
     return Files.lines(Paths.get(configuration.eclipseHomeDirPath, "eclipse.ini")).asSequence()

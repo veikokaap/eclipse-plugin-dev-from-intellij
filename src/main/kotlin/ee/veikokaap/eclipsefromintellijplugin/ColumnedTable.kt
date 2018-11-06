@@ -68,7 +68,7 @@ class ColumnedTable<T>(val columns: List<TableColumn<T, out Any?>>) : JPanel() {
     }
   }
   
-  fun shrinkLastColumn() {
+  private fun shrinkLastColumn() {
     if (table.columnCount > 0) {
       val lastColumn = table.columnModel.getColumn(table.columnCount - 1)
       lastColumn.preferredWidth = 0
