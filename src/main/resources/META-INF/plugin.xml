@@ -1,0 +1,24 @@
+<idea-plugin>
+  <id>ee.veikokaap.eclipse-tycho-plugin-development-from-intellij</id>
+  <name>Eclipse plugin development from IntelliJ</name>
+  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+  <idea-version since-build="181.5281" until-build="999.*"/>
+
+  <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <depends optional="true">org.jetbrains.idea.maven</depends>
+
+  <extensions defaultExtensionNs="org.jetbrains.idea.maven">
+    <importer implementation="ee.veikokaap.eclipsefromintellijplugin.import.EclipseMavenProjectImporter"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <configurationType implementation="ee.veikokaap.eclipsefromintellijplugin.runconfig.EclipsePluginConfigurationType"/>
+  </extensions>
+
+
+</idea-plugin>
