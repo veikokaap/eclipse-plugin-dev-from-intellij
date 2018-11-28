@@ -1,4 +1,4 @@
-package ee.veikokaap.eclipsefromintellijplugin.runconfig
+package ee.veikokaap.idea.plugins.eclipsefromintellijplugin.runconfig
 
 import com.intellij.execution.configurations.ConfigurationFactory
 import com.intellij.execution.configurations.ConfigurationType

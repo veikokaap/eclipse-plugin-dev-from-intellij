@@ -1,4 +1,4 @@
-package ee.veikokaap.eclipsefromintellijplugin.runconfig
+package ee.veikokaap.idea.plugins.eclipsefromintellijplugin.runconfig
 
 import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory
 import com.intellij.openapi.options.ConfigurationException
@@ -12,14 +12,14 @@ import com.intellij.util.io.isDirectory
 import com.intellij.util.io.isFile
 import com.intellij.util.io.systemIndependentPath
 import com.intellij.util.ui.UIUtil
-import ee.veikokaap.base.runconfig.BasicJavaApplicationSettingsPanel
-import ee.veikokaap.base.ColumnedTable
-import ee.veikokaap.base.EditableTableColumn
-import ee.veikokaap.base.TableColumn
-import ee.veikokaap.base.util.fillHorizontally
-import ee.veikokaap.base.util.fillVertically
-import ee.veikokaap.base.util.gridBagConstraints
-import ee.veikokaap.base.util.nextRow
+import ee.veikokaap.idea.plugins.base.runconfig.BasicJavaApplicationSettingsPanel
+import ee.veikokaap.idea.plugins.base.ColumnedTable
+import ee.veikokaap.idea.plugins.base.EditableTableColumn
+import ee.veikokaap.idea.plugins.base.TableColumn
+import ee.veikokaap.idea.plugins.base.util.fillHorizontally
+import ee.veikokaap.idea.plugins.base.util.fillVertically
+import ee.veikokaap.idea.plugins.base.util.gridBagConstraints
+import ee.veikokaap.idea.plugins.base.util.nextRow
 import java.awt.BorderLayout
 import java.awt.GridBagLayout
 import java.io.IOException

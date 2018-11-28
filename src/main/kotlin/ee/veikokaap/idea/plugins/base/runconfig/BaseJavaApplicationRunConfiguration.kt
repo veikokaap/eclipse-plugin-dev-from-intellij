@@ -1,4 +1,4 @@
-package ee.veikokaap.base.runconfig
+package ee.veikokaap.idea.plugins.base.runconfig
 
 import com.intellij.diagnostic.logging.LogConfigurationPanel
 import com.intellij.execution.CommonJavaRunConfigurationParameters

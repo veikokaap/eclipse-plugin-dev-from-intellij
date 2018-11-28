@@ -1,4 +1,4 @@
-package ee.veikokaap.eclipsefromintellijplugin.import
+package ee.veikokaap.idea.plugins.eclipsefromintellijplugin.import
 
 import com.intellij.compiler.CompilerConfiguration
 import com.intellij.compiler.CompilerConfigurationImpl
@@ -16,8 +16,8 @@ import com.intellij.openapi.externalSystem.service.project.ModifiableWorkspace
 import com.intellij.openapi.module.Module
 import com.intellij.openapi.roots.*
 import com.intellij.openapi.util.registry.Registry
-import ee.veikokaap.eclipsefromintellijplugin.TychoPackagingType
-import ee.veikokaap.eclipsefromintellijplugin.packagingType
+import ee.veikokaap.idea.plugins.eclipsefromintellijplugin.TychoPackagingType
+import ee.veikokaap.idea.plugins.eclipsefromintellijplugin.packagingType
 import org.jetbrains.idea.maven.importing.MavenModuleImporter
 import org.jetbrains.idea.maven.model.MavenArtifact
 import org.jetbrains.jps.model.java.compiler.JavaCompilers

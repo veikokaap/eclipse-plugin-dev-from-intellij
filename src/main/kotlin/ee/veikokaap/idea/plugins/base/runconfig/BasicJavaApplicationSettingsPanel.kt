@@ -1,4 +1,4 @@
-package ee.veikokaap.base.runconfig
+package ee.veikokaap.idea.plugins.base.runconfig
 
 import com.intellij.application.options.ModulesComboBox
 import com.intellij.execution.ui.CommonJavaParametersPanel
@@ -10,7 +10,7 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.LabeledComponent
 import com.intellij.ui.PanelWithAnchor
 import com.intellij.util.ui.UIUtil
-import ee.veikokaap.base.util.*
+import ee.veikokaap.idea.plugins.base.util.*
 import java.awt.BorderLayout
 import java.awt.GridBagLayout
 

@@ -1,5 +1,5 @@
 <idea-plugin>
-  <id>ee.veikokaap.eclipse-tycho-plugin-development-from-intellij</id>
+  <id>ee.veikokaap.idea.plugins.eclipse-tycho-plugin-development-from-intellij</id>
   <name>Eclipse plugin development from IntelliJ</name>
   <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
@@ -13,12 +13,11 @@
   <depends optional="true">org.jetbrains.idea.maven</depends>
 
   <extensions defaultExtensionNs="org.jetbrains.idea.maven">
-    <importer implementation="ee.veikokaap.eclipsefromintellijplugin.import.EclipseMavenProjectImporter"/>
+    <importer implementation="ee.veikokaap.idea.plugins.eclipsefromintellijplugin.import.EclipseMavenProjectImporter"/>
   </extensions>
 
   <extensions defaultExtensionNs="com.intellij">
-    <configurationType implementation="ee.veikokaap.eclipsefromintellijplugin.runconfig.EclipsePluginConfigurationType"/>
+    <configurationType implementation="ee.veikokaap.idea.plugins.eclipsefromintellijplugin.runconfig.EclipsePluginConfigurationType"/>
   </extensions>
-
 
 </idea-plugin>

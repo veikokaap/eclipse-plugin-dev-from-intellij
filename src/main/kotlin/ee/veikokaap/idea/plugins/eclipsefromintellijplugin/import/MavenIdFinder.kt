@@ -1,4 +1,4 @@
-package ee.veikokaap.eclipsefromintellijplugin.import
+package ee.veikokaap.idea.plugins.eclipsefromintellijplugin.import
 
 import com.intellij.openapi.module.Module
 import com.intellij.util.io.delete

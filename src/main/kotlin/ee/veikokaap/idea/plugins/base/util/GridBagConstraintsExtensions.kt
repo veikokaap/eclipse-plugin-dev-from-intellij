@@ -1,4 +1,4 @@
-package ee.veikokaap.base.util
+package ee.veikokaap.idea.plugins.base.util
 
 import java.awt.GridBagConstraints
 import java.awt.Insets

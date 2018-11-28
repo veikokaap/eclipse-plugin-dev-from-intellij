@@ -1,4 +1,4 @@
-package ee.veikokaap.eclipsefromintellijplugin.runconfig
+package ee.veikokaap.idea.plugins.eclipsefromintellijplugin.runconfig
 
 import com.intellij.execution.Executor
 import com.intellij.execution.configurations.*
@@ -7,9 +7,9 @@ import com.intellij.openapi.options.SettingsEditor
 import com.intellij.openapi.project.Project
 import com.intellij.util.getAttributeBooleanValue
 import com.intellij.util.xmlb.XmlSerializer
-import ee.veikokaap.base.runconfig.BaseJavaApplicationRunConfiguration
-import ee.veikokaap.eclipsefromintellijplugin.EclipsePluginPackagingType
-import ee.veikokaap.eclipsefromintellijplugin.packagingType
+import ee.veikokaap.idea.plugins.base.runconfig.BaseJavaApplicationRunConfiguration
+import ee.veikokaap.idea.plugins.eclipsefromintellijplugin.EclipsePluginPackagingType
+import ee.veikokaap.idea.plugins.eclipsefromintellijplugin.packagingType
 import org.jdom.Element
 import org.jetbrains.idea.maven.project.MavenProjectsManager
 
