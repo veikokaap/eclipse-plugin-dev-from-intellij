@@ -1,13 +1,12 @@
 <idea-plugin>
   <id>ee.veikokaap.idea.plugins.eclipse-tycho-plugin-development-from-intellij</id>
-  <name>Eclipse plugin development from IntelliJ</name>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <name>Eclipse IDE plugin development from IntelliJ</name>
 
   <idea-version since-build="181.5281" until-build="999.*"/>
 
   <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    IntelliJ IDEA plugin for aiding development of Eclipse IDE plugins.<br><br>
+    More information at <a href="https://github.com/veikokaap/eclipse-plugin-dev-from-intellij">GitHub</a>.
     ]]></description>
 
   <depends optional="true">org.jetbrains.idea.maven</depends>
