@@ -1,11 +1,11 @@
-package ee.veikokaap.eclipsefromintellijplugin
+package ee.veikokaap.base
 
 import com.intellij.ui.JBColor
 import com.intellij.ui.table.JBTable
 import com.intellij.util.containers.forEachGuaranteed
-import ee.veikokaap.eclipsefromintellijplugin.util.fillBoth
-import ee.veikokaap.eclipsefromintellijplugin.util.gridBagConstraints
-import ee.veikokaap.eclipsefromintellijplugin.util.withInsets
+import ee.veikokaap.base.util.fillBoth
+import ee.veikokaap.base.util.gridBagConstraints
+import ee.veikokaap.base.util.withInsets
 import java.awt.GridBagLayout
 import java.awt.Insets
 import java.util.*

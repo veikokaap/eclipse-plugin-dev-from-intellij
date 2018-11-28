@@ -10,7 +10,7 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.LabeledComponent
 import com.intellij.ui.PanelWithAnchor
 import com.intellij.util.ui.UIUtil
-import ee.veikokaap.eclipsefromintellijplugin.util.*
+import ee.veikokaap.base.util.*
 import java.awt.BorderLayout
 import java.awt.GridBagLayout
 

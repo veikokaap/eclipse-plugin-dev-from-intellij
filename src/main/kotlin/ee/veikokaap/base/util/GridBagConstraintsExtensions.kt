@@ -1,8 +1,7 @@
-package ee.veikokaap.eclipsefromintellijplugin.util
+package ee.veikokaap.base.util
 
 import java.awt.GridBagConstraints
 import java.awt.Insets
-import javax.swing.JPanel
 
 fun gridBagConstraints(
     gridx: Int = GridBagConstraints.RELATIVE,
