@@ -16,8 +16,8 @@ import com.intellij.openapi.externalSystem.service.project.ModifiableWorkspace
 import com.intellij.openapi.module.Module
 import com.intellij.openapi.roots.*
 import com.intellij.openapi.util.registry.Registry
-import ee.veikokaap.base.TychoPackagingType
-import ee.veikokaap.base.packagingType
+import ee.veikokaap.eclipsefromintellijplugin.TychoPackagingType
+import ee.veikokaap.eclipsefromintellijplugin.packagingType
 import org.jetbrains.idea.maven.importing.MavenModuleImporter
 import org.jetbrains.idea.maven.model.MavenArtifact
 import org.jetbrains.jps.model.java.compiler.JavaCompilers

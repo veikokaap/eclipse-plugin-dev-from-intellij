@@ -1,4 +1,4 @@
-package ee.veikokaap.base
+package ee.veikokaap.eclipsefromintellijplugin
 
 import org.jetbrains.idea.maven.project.MavenProject
 

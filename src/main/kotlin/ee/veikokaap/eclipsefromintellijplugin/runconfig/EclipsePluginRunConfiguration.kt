@@ -8,8 +8,8 @@ import com.intellij.openapi.project.Project
 import com.intellij.util.getAttributeBooleanValue
 import com.intellij.util.xmlb.XmlSerializer
 import ee.veikokaap.base.runconfig.BaseJavaApplicationRunConfiguration
-import ee.veikokaap.base.EclipsePluginPackagingType
-import ee.veikokaap.base.packagingType
+import ee.veikokaap.eclipsefromintellijplugin.EclipsePluginPackagingType
+import ee.veikokaap.eclipsefromintellijplugin.packagingType
 import org.jdom.Element
 import org.jetbrains.idea.maven.project.MavenProjectsManager
 

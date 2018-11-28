@@ -11,8 +11,8 @@ import com.intellij.openapi.projectRoots.JavaSdkVersion
 import com.intellij.openapi.util.io.FileUtil
 import com.intellij.util.io.exists
 import com.intellij.util.io.systemIndependentPath
-import ee.veikokaap.base.EclipsePluginPackagingType
-import ee.veikokaap.base.packagingType
+import ee.veikokaap.eclipsefromintellijplugin.EclipsePluginPackagingType
+import ee.veikokaap.eclipsefromintellijplugin.packagingType
 import org.apache.commons.io.FileUtils
 import org.jetbrains.idea.maven.project.MavenProject
 import org.jetbrains.idea.maven.project.MavenProjectsManager
