@@ -1,0 +1,3 @@
+[submodule "intellij-plugins-base"]
+	path = intellij-plugins-base
+	url = https://github.com/veikokaap/intellij-plugins-base
