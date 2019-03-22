@@ -3,8 +3,8 @@ package ee.veikokaap.idea.plugins.eclipsefromintellijplugin.runconfig
 import com.intellij.execution.configurations.ConfigurationFactory
 import com.intellij.execution.configurations.ConfigurationType
 import com.intellij.execution.configurations.RunConfiguration
+import com.intellij.icons.AllIcons
 import com.intellij.openapi.project.Project
-import com.intellij.openapi.util.IconLoader
 import org.jetbrains.annotations.Nls
 import javax.swing.Icon
 
@@ -30,7 +30,7 @@ class EclipsePluginConfigurationType : ConfigurationType {
   }
   
   override fun getIcon(): Icon {
-    return IconLoader.getIcon("/icons/eclipse.png")
+    return AllIcons.Providers.Eclipse;
   }
   
   override fun getId(): String {
