@@ -1,8 +1,5 @@
 package ee.veikokaap.idea.plugins.eclipsefromintellijplugin.import
 
-import com.intellij.compiler.CompilerConfiguration
-import com.intellij.compiler.CompilerConfigurationImpl
-import com.intellij.compiler.impl.javaCompiler.eclipse.EclipseCompilerConfiguration
 import com.intellij.openapi.externalSystem.model.project.ProjectId
 import com.intellij.openapi.externalSystem.service.project.AbstractIdeModifiableModelsProvider
 import org.jetbrains.idea.maven.importing.MavenImporter
@@ -20,7 +17,6 @@ import ee.veikokaap.idea.plugins.eclipsefromintellijplugin.TychoPackagingType
 import ee.veikokaap.idea.plugins.eclipsefromintellijplugin.packagingType
 import org.jetbrains.idea.maven.importing.MavenModuleImporter
 import org.jetbrains.idea.maven.model.MavenArtifact
-import org.jetbrains.jps.model.java.compiler.JavaCompilers
 
 class EclipseMavenProjectImporter : MavenImporter("ee.veikokaap", "eclipse-from-intellij-plugin") {
   
@@ -60,29 +56,6 @@ class EclipseMavenProjectImporter : MavenImporter("ee.veikokaap", "eclipse-from-
     finally {
       substituteApiRegistryValue.setValue(previousRegistryValue)
     }
-  }
-  
-  override fun postProcess(module: Module?, mavenProject: MavenProject?, changes: MavenProjectChanges?, modifiableModelsProvider: IdeModifiableModelsProvider?) {
-    val switchedToEclipseCompiler = switchModuleToEclipseCompiler(module)
-    if (switchedToEclipseCompiler) {
-      println("Switched $module to eclipse compiler")
-    }
-    else {
-      println("Failed to switch $module to eclipse compiler")
-    }
-  }
-  
-  fun switchModuleToEclipseCompiler(module: Module?): Boolean {
-    val project = module?.project ?: return false
-    
-    val compilerConfiguration = CompilerConfiguration.getInstance(project) as? CompilerConfigurationImpl ?: return false
-    val eclipseCompiler = compilerConfiguration.registeredJavaCompilers.firstOrNull { it.id == JavaCompilers.ECLIPSE_ID } ?: return false
-    val compilerOptions = EclipseCompilerConfiguration.getOptions(project, EclipseCompilerConfiguration::class.java) ?: return false
-    
-    compilerConfiguration.defaultCompiler = eclipseCompiler
-    compilerOptions.PROCEED_ON_ERROR = false
-    
-    return true
   }
   
   private fun trySubstituteUsingBuiltInApi(dependency: MavenArtifact, mavenIdFinder: MavenIdFinder, rootModelAdapter: MavenRootModelAdapter, modifiableModelsProvider: IdeModifiableModelsProvider, ownerModule: Module): Boolean {
