@@ -10,8 +10,8 @@ repositories {
 
 plugins {
   id("java")
-  id("org.jetbrains.intellij")
-  kotlin("jvm")
+  id("org.jetbrains.intellij") version "0.4.9"
+  kotlin("jvm") version "1.3.41" apply false
 }
 
 dependencies {
