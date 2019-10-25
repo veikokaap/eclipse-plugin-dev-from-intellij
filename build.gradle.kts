@@ -11,7 +11,7 @@ repositories {
 plugins {
   id("java")
   id("org.jetbrains.intellij") version "0.4.9"
-  kotlin("jvm") version "1.3.41" apply false
+  kotlin("jvm") version "1.3.41" apply true
 }
 
 dependencies {
@@ -28,7 +28,7 @@ tasks.withType(KotlinCompile::class.java).all {
   targetCompatibility = javaVersion.name
   
   kotlinOptions {
-    jvmTarget = javaVersion.name
+    jvmTarget = javaVersion.toString()
     apiVersion = kotlinVersion
     languageVersion = kotlinVersion
   }
